@@ -1,5 +1,5 @@
 # ======================================
-# 🧠 CAREER GUIDANCE CHATBOT USING PYDATALOG (ENHANCED VERSION)
+# CAREER GUIDANCE CHATBOT USING PYDATALOG
 # ======================================
 
 from pyDatalog import pyDatalog
@@ -11,7 +11,7 @@ pyDatalog.clear()
 pyDatalog.create_terms('Career, Field, Skill, Interest, Education, suggest_career, has_interest, has_skill, has_education')
 
 # -------------------------------
-# ✅ Define Careers
+# Define Careers
 # -------------------------------
 careers = [
     'Software Engineer', 'Data Scientist', 'AI Engineer', 'Web Developer', 'Cybersecurity Analyst',
@@ -61,7 +61,7 @@ for interest, jobs in interests:
         +has_interest(interest, job)
 
 # -------------------------------
-# ✅ Skill-based rules
+# Skill-based rules
 # -------------------------------
 skills = [
     ('python', ['Data Scientist', 'AI Engineer', 'Software Engineer', 'Data Engineer', 'Machine Learning Researcher']),
@@ -112,7 +112,7 @@ for skill, jobs in skills:
         +has_skill(skill, job)
 
 # -------------------------------
-# ✅ Education-based rules
+# Education-based rules
 # -------------------------------
 educations = [
     ('engineering', ['Software Engineer', 'Mechanical Engineer', 'Electrical Engineer', 'Civil Engineer', 'AI Engineer', 'Cloud Engineer', 'DevOps Engineer', 'Robotics Engineer']),
@@ -136,7 +136,7 @@ for edu, jobs in educations:
         +has_education(edu, job)
 
 # -------------------------------
-# ✅ Rule: Suggest career if all match
+# Rule: Suggest career if all match
 # -------------------------------
 suggest_career(Interest, Skill, Education, Career) <= (
     has_interest(Interest, Career) &
@@ -145,7 +145,7 @@ suggest_career(Interest, Skill, Education, Career) <= (
 )
 
 # -------------------------------
-# 🎨 Helper Functions
+# Helper Functions
 # -------------------------------
 def print_slow(text, delay=0.03):
     """Print text with a typing effect"""
@@ -219,7 +219,7 @@ def get_valid_input(prompt, input_type, valid_options, examples):
         return cleaned_input
 
 # -------------------------------
-# 🤖 Chatbot Interaction
+# Chatbot Interaction
 # -------------------------------
 def main():
     print("\n" + "="*60)
@@ -321,7 +321,7 @@ def main():
     
     # Ask if user wants to try again
     print("\n" + "="*60)
-    retry = input("\n🔄 Would you like to try different inputs? (yes/no): ").lower().strip()
+    retry = input("\nWould you like to try different inputs? (yes/no): ").lower().strip()
     if retry in ['yes', 'y', 'yeah', 'sure']:
         print("\n" + "="*60 + "\n")
         main()
@@ -330,7 +330,8 @@ def main():
         print_slow("🚀 Best of luck on your career journey!\n", 0.02)
 
 # -------------------------------
-# 🚀 Run the chatbot
+#   Run the chatbot
 # -------------------------------
 if __name__ == "__main__":
+
     main()
