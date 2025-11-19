@@ -1,8 +1,7 @@
-Career Guidance Chatbot (PyDatalog)
-
+# 🎯 Career Guidance Chatbot (PyDatalog)
 A simple command-line chatbot that suggests career options based on user interest, skills, and education using PyDatalog logic rules.
 
-Features
+## Features
 
 Logic-based career recommendations
 
@@ -14,17 +13,18 @@ Input validation
 
 Easy to customize and extend
 
-Requirements
+## Requirements
 
 Python 3.8+
 
 Install dependency:
+
 pip install pyDatalog
 
-How to Run
+## How to Run
 python improv_chatbot.py
 
-How It Works
+## How It Works
 
 The bot collects:
 
@@ -35,14 +35,14 @@ Skill
 Education
 
 PyDatalog rules match these to suggest a suitable career.
-All rules and data can be modified inside improv_chatbot.py.
+Everything is editable inside improv_chatbot.py.
 
-Customize
+## Customize
 
 You can add:
 
-New interests/skills/educational backgrounds
+New interests, skills, and education fields
 
 More careers and descriptions
 
-Web/GUI interface in the future
+Web/GUI interface in future
